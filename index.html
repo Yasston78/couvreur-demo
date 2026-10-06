@@ -35,7 +35,7 @@
   .tel small{display:block;font-size:.62rem;font-weight:500;opacity:.9;line-height:1}
 
   /* ——— hero ——— */
-  .hero{position:relative;background:linear-gradient(rgba(0,23,92,.86),rgba(0,19,68,.92)),url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60"><path d="M0 60 L60 0 L120 60 Z" fill="%23001a50"/><path d="M0 60 L60 6 L120 60" fill="none" stroke="%230f2d6e" stroke-width="2"/></svg>') repeat-x bottom;background-size:120px 60px, auto;color:#fff;padding:70px 0 90px}
+  .hero{position:relative;background:linear-gradient(rgba(0,23,92,.82),rgba(0,19,68,.9)),url('img/hero.jpg') center/cover no-repeat;color:#fff;padding:70px 0 90px}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
   .hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3rem);margin-bottom:18px}
   .hero .sous{color:#c8d2ea;font-size:1.1rem;max-width:480px;margin-bottom:26px}
@@ -84,12 +84,8 @@
   .real .lead{color:#aebde0}
   .galerie{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
   .galerie figure{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--marine-2)}
-  .galerie .toit{width:100%;height:100%;display:flex;align-items:flex-end;justify-content:center;padding:0 12px 14px}
-  .galerie .tuiles{display:flex;flex-wrap:wrap;align-content:flex-end;gap:2px;width:100%}
-  .galerie .tuile{width:calc(25% - 2px);height:44px;border-radius:4px;background:var(--vert);opacity:.75}
-  .galerie .tuile:nth-child(4n+2){background:#2fd36d}
-  .galerie .tuile:nth-child(4n+3){background:#1a9c4e}
-  .galerie figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 16px 12px;background:linear-gradient(transparent,rgba(0,19,68,.85));font-size:.88rem;font-weight:600}
+  .galerie figure img{width:100%;height:100%;object-fit:cover;display:block}
+  .galerie figcaption{position:absolute;bottom:0;left:0;right:0;padding:34px 16px 12px;background:linear-gradient(transparent,rgba(0,19,68,.88));font-size:.9rem;font-weight:600;color:#fff}
 
   /* ——— zone ——— */
   .zone ul{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px;list-style:none}
@@ -208,9 +204,9 @@
     <h2 class="section">Nos réalisations</h2>
     <p class="lead">Quelques chantiers livrés récemment dans le Rhône.</p>
     <div class="galerie">
-      <figure><div class="toit"><div class="tuiles"><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div></div></div><figcaption>Rénovation complète — Villeurbanne</figcaption></figure>
-      <figure><div class="toit"><div class="tuiles"><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div></div></div><figcaption>Zinguerie + gouttières — Bron</figcaption></figure>
-      <figure><div class="toit"><div class="tuiles"><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div><div class="tuile"></div></div></div><figcaption>Démoussage + traitement — Caluire</figcaption></figure>
+      <figure><img src="img/chantier1.jpg" alt="Rénovation de toiture en tuiles"><figcaption>Rénovation complète — Villeurbanne</figcaption></figure>
+      <figure><img src="img/chantier2.jpg" alt="Dépose et rénovation de toiture"><figcaption>Rénovation de toiture — Bron</figcaption></figure>
+      <figure><img src="img/chantier3.jpg" alt="Pose de couverture"><figcaption>Pose de couverture — Caluire</figcaption></figure>
     </div>
   </div>
 </section>
